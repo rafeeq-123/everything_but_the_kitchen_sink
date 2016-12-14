@@ -1,7 +1,9 @@
+<div class="container text-center">
 <h1><u>Welcome to your ingredients!</u></h1>
 <%@recipes.each do |recipe| %>
 	<%=recipe.name_of_ingredient%>
 	<%= recipe.quantity%>
 	<%end%>
 	<%=link_to "Find more recipes", new_recipe_url%>
-
+	<h4 class="d-block bg-primary"><%=count_recipes%></h4>
+</div>

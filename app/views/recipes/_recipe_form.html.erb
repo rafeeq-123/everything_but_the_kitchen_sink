@@ -1,9 +1,7 @@
-<div >
 <%= form_for @recipe do |f|%>
 <%=f.label :quantity, "How much do you have?"%>
-<%=f.text_field :quantity%><br>
+<%=f.text_field :quantity, class:" form-control form-control-lg", placeholder:"1 ounce"%><br>
 <%=f.label :name_of_ingredient %>
-<%=f.text_field :name_of_ingredient, placeholder:"ex:cookies,coffee,Bailys"%><br>
+<%=f.text_field :name_of_ingredient, placeholder:"ex:cookies,coffee,Bailys", class:"form-control form-control-lg"%><br>
 <%=f.submit "Submit"%>
 <%end%>
-</div>
