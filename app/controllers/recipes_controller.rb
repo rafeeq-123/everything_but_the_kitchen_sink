@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
 
 	def update
 		find_params_id
-		if recipe.update(recipe_params)
+		if @recipe.update(recipe_params)
 		 	redirect_to @recipe
 		else
 		 	render "show"
