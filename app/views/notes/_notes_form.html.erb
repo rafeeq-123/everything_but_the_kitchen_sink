@@ -1,0 +1,7 @@
+<%= form_for @note do |f|%>
+<%=f.label :title%>
+<%=f.text_field :title, class:" form-control form-control-sm" %><br>
+<%=f.label :body %>
+<%=f.text_field :body, class:"form-control form-control-sm"%><br>
+<%=f.submit "Submit"%>
+<%end%>
