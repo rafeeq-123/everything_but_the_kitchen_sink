@@ -14,7 +14,7 @@ module RecipesHelper
 	# end
 	def count_recipes
   	if @recipes.count == 0
-  		puts " you do not have any recipes yet! Get some!"
+  		"You do not have any recipes yet! Get some!"
   	else @recipes.count > 0
   		"You have recipes #{@recipes.count} already! "	
   	end	
